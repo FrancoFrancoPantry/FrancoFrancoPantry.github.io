@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Pantry Tracker</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link id="stylesheet" rel="stylesheet" href="pantrystyle.css">
+</head>
+<body>
+  <div class="dropdown">
+  <button class="dropbtn" onclick="toggleDropdown()">☰</button>
+  <div class="dropdown-content" id="categoryDropdown">
+    <a href="pantry.html#Pantry">Pantry</a>
+    <a href="pantry.html#Freezer">Freezer</a>
+    <a href="pantry.html#Fridge">Fridge</a>
+    <a href="pantry.html#Toiletries">Toiletries</a>
+    <a href="pantry.html#Garage">Garage</a>
+    <a href="pantryneeds.html">Needs</a>
+  </div>
+</div>
+
+
+<h1 style="text-align:center;">Low Inventory</h1>
+  <button onclick="printNeedsList()">🖨 Print Needs List</button>
+
+
+<!-- Table -->
+<table id="needsList">
+  <thead>
+    <tr>
+      <th>Item</th>
+      <th>Needed</th>
+      <th>Current</th>
+      <th>Minimum</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td colspan="4">Loading...</td></tr>
+  </tbody>
+</table>
+
+<script src="pantryneedsjs.js"></script>
+</body>
+</html>
